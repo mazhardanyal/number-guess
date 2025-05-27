@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calcu.css">
+  <title>Guess It</title>
+  <style>/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Header styles */
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.between {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.number {
+  font-size: 5rem;
+  width: 15rem;
+  height: 15rem;
+  margin: 30px auto;
+  background-color: #eee;
+  color: #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input field */
+.guess {
+  width: 100px;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+  background-color: #5c5cff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  background-color: #4a4ae0;
+}
+
+/* Message and score display */
+.message {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 1.3rem;
+  margin: 8px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .number {
+    width: 10rem;
+    height: 10rem;
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .guess {
+    width: 80px;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Guess My Number!</h1>
+    <p class="between">(Between 1 in 20)</p>
+    <button class="btn again"> Again!</button>
+    <div class="number">?</div>
+  </header>
+  <main>
+    <section class="left ">
+      <input type="number" name="" id="" class="guess">
+      <butoon class="btn check">Check!</butoon>
+    </section>
+    <section class="right">
+<p class="message">Start guessing....</p>
+<p class="label-score">Score: <span class="score">20</span></p>
+<p class="label-highscore">Highscore: <span class="highscore">0</span></p>
+    </section>
+  </main>
+  <script src="inex.js"></script>
+</body>
+</html>
